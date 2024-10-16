@@ -2,9 +2,9 @@
   "name": "devcarlos-api",
   "version": "1.0.0",
   "description": "DevCarlos API.",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon"
   },
   "author": {
     "name": "Carlos Farias",
@@ -12,6 +12,14 @@
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "sequelize-cli": "^6.6.2",
+    "sucrase": "^3.35.0"
   }
 }
