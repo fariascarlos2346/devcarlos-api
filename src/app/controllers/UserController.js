@@ -18,7 +18,14 @@ class UserController {
             password_hash: Yup.string().min(6).required(),
             admin: Yup.boolean(),
         });
+
+        try {
+            schema.validateSync(request.body, { abortEarly: false });
+        } catch (err) {
+            return response.status(400).json({ error: err.errors });
+        }
         
+
         const { name, email, password_hash, admin } = request.body;
 
         const user = await User.create({
