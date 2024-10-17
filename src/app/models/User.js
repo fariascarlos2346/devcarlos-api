@@ -1,4 +1,5 @@
 import Sequelize, { Model } from 'sequelize';
+import bcrypt from 'bcrypt';
 
 /* Interface para integrar nosso banco de dados, persistir dados */
 
@@ -8,6 +9,7 @@ class User extends Model {
             {
                 name: Sequelize.STRING,
                 email: Sequelize.STRING,
+                password: Sequelize.VIRTUAL,
                 password_hash: Sequelize.STRING,
                 admin: Sequelize.BOOLEAN,
             },
@@ -15,6 +17,14 @@ class User extends Model {
                 sequelize,
             },
         );
+
+        this.addHook('beforeSave', async (user) => {
+            if (user.password) {
+                user.password_hash = await bcrypt.hash(user.password, 10)
+            }
+        });
+
+        return this;
     }
 }
 
