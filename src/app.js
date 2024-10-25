@@ -1,5 +1,6 @@
 import express from 'express'; // exportando express
 import { resolve } from 'node:path';
+
 import routes from './routes';
 
 import './database';
