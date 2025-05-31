@@ -1,7 +1,7 @@
 {
   "name": "devcarlos-api",
   "version": "1.0.0",
-   "description": "DevCarlos-API.",
+  "description": "DevCarlos-API.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,8 @@
     "name": "Carlos Dev",
     "url": "https://github.com/fariascarlos2346"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
