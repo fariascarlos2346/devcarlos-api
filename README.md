@@ -1,10 +1,11 @@
 <h1>Projeto Amburgueria</h1>
 <p>
-  <li>
-    <ul>Yarn Instalado no inicio</ul>
-    <ul>Iniciando o projeto com 'npm init -y'. </ul>
-    <ul>Para iniciarmos nosso servidor vamos Instalar o Express, 'yarn add express'.</ul>
-  </li>
+  <ul>
+    <li>Yarn Instalado no inicio</li>
+    <li>Iniciando o projeto com 'npm init -y'. </li>
+    <li>Para iniciarmos nosso servidor vamos Instalar o Express, 'yarn add express'.</li>
+    <li>Recaptulando os primeiros passos, criamos arquivo app, uma classe onde configuramos, no routes criamos a primeira rota get, no server espomos o app na porta 3001.</li>
+  </ul>
 </p>
 <h2>Tecnologias</h2>
 
