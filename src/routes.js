@@ -8,8 +8,8 @@ const routes = new Router()
 routes.get('/', async (require, response) => {
     const user = await User.create({
         id: v4(),
-        name: 'Carlos Bia',
-        email: 'carlos@email.com',
+        name: 'Carlos Bia2',
+        email: 'carlos2@email.com',
         password_hash: 'asdfdfçlkhljmç'
     });
 
