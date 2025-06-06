@@ -10,4 +10,15 @@
   </ul>
 </p>
 <h2>Tecnologias</h2>
+<ul>
+  <li>Yarn</li>
+  <li>Express</li>
+  <li>Nodemon e Sucrase</li>
+  <li>MVC e Container Docker </li>
+  <li>SQL e ORM</li>
+  <li>Sequelize e Sequelize-cli</li>
+  <li>PG e PG-HSTORE</li>
+  <li>UUID</li>
+  
+</ul>
 
